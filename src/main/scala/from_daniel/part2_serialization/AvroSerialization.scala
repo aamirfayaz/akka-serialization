@@ -1,4 +1,4 @@
-package part2_serialization
+package from_daniel.part2_serialization
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
 

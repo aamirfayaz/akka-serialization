@@ -1,4 +1,4 @@
-package part1_recap
+package from_daniel.part1_recap
 
 import akka.actor.SupervisorStrategy.{Restart, Stop}
 import akka.actor.{Actor, ActorLogging, ActorSystem, OneForOneStrategy, PoisonPill, Props, Stash, SupervisorStrategy}
@@ -125,7 +125,7 @@ object AkkaRecap_Remote extends App {
 }
 
 object AkkaRecap_Persistence extends App {
-  val config = ConfigFactory.load("persistentStores.conf").getConfig("postgresStore")
+  val config = ConfigFactory.load("from_daniel/persistentStores.conf").getConfig("postgresStore")
   val system = ActorSystem("PersistenceSystem", config)
   val simplePersistentActor = system.actorOf(Props[SimplePersistentActor], "simplePersistentActor")
 

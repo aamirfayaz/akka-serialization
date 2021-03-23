@@ -1,4 +1,4 @@
-package part2_serialization
+package from_daniel.part2_serialization
 
 import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
 import java.util.UUID
@@ -7,7 +7,7 @@ import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 import akka.serialization.Serializer
 import com.sksamuel.avro4s.{AvroInputStream, AvroOutputStream, AvroSchema}
 import com.typesafe.config.ConfigFactory
-import part2_serialization.Datamodel.ProtobufVote
+import from_daniel.part2_serialization.Datamodel.ProtobufVote
 
 import scala.util.Random
 

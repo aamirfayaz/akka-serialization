@@ -1,4 +1,4 @@
-package part2_serialization
+package from_daniel.part2_serialization
 
 import akka.actor.{ActorSystem, Props}
 import com.typesafe.config.ConfigFactory

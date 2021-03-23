@@ -1,9 +1,9 @@
 
 syntax = "proto2";
 
-package part2_serialization;
+package from_daniel.part2_serialization;
 
-option java_package = "part2_serialization";
+option java_package = "from_daniel.part2_serialization";
 
 message OnlineStoreUser {
     required int32 id = 1;

@@ -1,8 +1,8 @@
-package part2_serialization
+package from_daniel.part2_serialization
 
 import akka.actor.{ActorSystem, Props}
 import com.typesafe.config.ConfigFactory
-import part2_serialization.Datamodel.OnlineStoreUser
+import from_daniel.part2_serialization.Datamodel.OnlineStoreUser
 
 
 object ProtobufSerialization_Local extends App {
