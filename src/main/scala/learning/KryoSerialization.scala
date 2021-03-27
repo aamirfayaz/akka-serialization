@@ -14,14 +14,14 @@ import learning.{Person, SimpleActor, SimplePersistentActor}
 case class Book(title: String, year: Int)
 object KryoSerialization_Local extends App {
 
-  val config = ConfigFactory.parseString(
+  val config: Any = ConfigFactory.parseString(
     """
       |akka.remote.artery.canonical.port = 2551
       |""".stripMargin
   ).withFallback(ConfigFactory.load("kryoSerialization.conf"))
-  val system = ActorSystem("LocalSystem", config)
-  val actorSelection = system.actorSelection("akka://RemoteSystem@localhost:2552/user/remoteActor")
-  actorSelection ! Book("The Monk who sold his ferrari", 1996)
+ // val system = ActorSystem("LocalSystem", config)
+//  val actorSelection = system.actorSelection("akka://RemoteSystem@localhost:2552/user/remoteActor")
+ // actorSelection ! Book("The Monk who sold his ferrari", 1996)
 }
 
 /**
