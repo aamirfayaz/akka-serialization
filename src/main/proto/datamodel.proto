@@ -1,18 +1,12 @@
+ syntax = "proto2";
 
-syntax = "proto2";
+ package learning;
 
-package from_daniel.part2_serialization;
+ option java_package = "learning";
 
-option java_package = "from_daniel.part2_serialization";
-
-message OnlineStoreUser {
-    required int32 id = 1;
-    required string userName = 2;
-    optional string userEmail = 4;
-    optional string userPhone = 5;
-}
-
-message ProtobufVote {
-    required string ssn = 1;
-    required string candidate = 2;
-}
+ message OnlineStoreUser {
+     required int32 id = 1;
+     required string userName = 2;
+     optional string userEmail = 3;
+     optional string userPhone = 5;
+ }

@@ -9,10 +9,10 @@ import java.io.{ByteArrayInputStream, ByteArrayOutputStream}
 
 /**
   * fast serializer but not as fast as kryo, but it has some other benefits.
-  * Distinctive benefit is its Schema-based, i.e it can validate objects aganist a know schema.
+  * Distinctive benefit is its Schema-based, i.e it can validate objects against a know schema.
   * one-line schema generation.
-  * well-maintained library for scala
-  * good interoperability with Hadoop or Spark 
+  * well-maintained library for scala.
+  * good interoperability with Hadoop or Spark.
   * */
 
 
@@ -20,7 +20,7 @@ case class BankAccount(iban: String, bankCode: String, amount: Double, currency:
 
 case class CompanyRegistry(name: String, accounts: Seq[BankAccount], activityCode: String, marketCap: Double)
 
-class RtjvmAvroSerializer extends Serializer {
+class TheAvroSerializer extends Serializer {
 
   val companyRegistrySchema = AvroSchema[CompanyRegistry]
 

@@ -27,7 +27,7 @@ libraryDependencies ++= Seq(
   
   "com.github.romix.akka" %% "akka-kryo-serialization" % "0.5.1",
   "com.sksamuel.avro4s" %% "avro4s-core" % "2.0.4",
-  "com.google.protobuf" % "protobuf-java" % "3.6.1",
+  "com.google.protobuf" % "protobuf-java" % "3.9.0",
   "io.spray" %%  "spray-json" % "1.3.5",
 
   ///////////////////////////////////////////////////
