@@ -7,7 +7,7 @@
   * Best use case is "Schema Evolution" (overcomes schema adaptation layer addition as seen in akka persistence)
   * Akka already implemented Akka Protobuf serializer.
   * ProtoBuf is not without its limitations: it needs a dedicated code generator to translate these proto files from that
-  * IDL into some actual code that we can use,
+     IDL into some actual code that we can use,
   * Sadly, it doesn't support Scala out of the box, it does support java. But Scala can easily interoperate with Java
   * For running protoc file and generating Java code:
   * --> Download  translator/compiler whatever first for your OS: https://github.com/protocolbuffers/protobuf/releases and install protoc
